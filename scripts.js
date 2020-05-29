@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   $("#botao").click(function() {
+
     var name = $("#nome").val();
     var idade = $("#idade").val();
     var endereco = $("#endereco").val();
@@ -22,10 +23,10 @@ $(document).ready(function() {
 
     },
     function(data, status){
-
       alert('Data: ' + data + ' Status: ' + status);
       
-      if(status === "Aprovado"){
+      
+      if(status === "success"){
 
         alert(`Aprovado: ${nome}, obrigado por contribuir pela sobrevivência da humanidade. Em até 10 dias úteis você receberá em seu endereço o seu kit de combate a seres extraterrestres`);
 
